@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Link Test</title>
+</head>
+
+<body>
+    Panjang :<input type="text" id="panjang" value="10"><br>
+    Lebar: <input type="text" id="lebar" value="20"><br>
+    Luas: <input type="text" id="luas"><br>
+    <button onclick="hitung()">Hitung</button>
+    <a id="kelink" href="http://mysite.com">Click me</a><br>
+    <script>
+        //url = document.links.kelink.href
+        url= document.getElementById('kelink').href //sama
+        document.write('The URL is ' + url)
+        function hitung(){
+            panjang=panjang.value
+            lebar=lebar.value
+            luas.value=parseInt(panjang)+parseInt(lebar)
+        }
+        
+    </script>
+</body>
+
+</html>

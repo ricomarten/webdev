@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    nama=<input type="text" id="nama"> <br>
+    umur=<input type="text" id="umur"> <br>
+    alamat=<input type="text" id="alamat"> <br>
+    <button onclick="validasi()">cek</button>
+    <div id="result"></div>
+</body>
+
+</html>
+
+<script>
+    // validasi, nama harus string
+    // umur harus number
+    // alamat harus lebih panjang dari 10 karakter
+    function validasi() {
+        errNumber=0
+        fnama = nama.value
+        fumur = parseInt(umur.value)
+        if (isNaN(fumur)) {
+            alert("umur harus angka")
+            errNumber++
+        }
+        falamat = alamat.value
+        if(falamat.length<10){
+            alert("alamat harus lebih panjang dari 10 karakter")
+            errNumber++
+        }
+        if(errNumber==0){
+            alert(  "Nama :"+fnama+"\n"+
+                    "Umur :"+fumur+"\n"+
+                    "Alamat:"+falamat )
+        }
+
+    }
+
+</script>

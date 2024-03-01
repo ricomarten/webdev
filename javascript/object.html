@@ -1,0 +1,23 @@
+<script>
+    function User(forename, username, password) {
+        this.forename = forename
+        this.username = username
+        this.password = password
+        this.showUser = showUser
+        this.showUserName = showUserName
+        this.len=(this.username).length
+    }
+    function showUser() {
+        document.write("Forename: " + this.forename + "<br>")
+        document.write("Username: " + this.username + "<br>")
+        document.write("Password: " + this.password + "<br>")
+    }
+    function showUserName() {    
+        document.write("Username: " + this.username + "<br>")
+    }
+    details = new User("Wolfgang", "w.a.mozart", "composer")
+    details.forename="Rico"
+    details.username="Ricomarten"
+    details.showUser()
+    document.write("Length username: " + details.len + "<br>")
+</script>

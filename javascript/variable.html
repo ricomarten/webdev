@@ -1,0 +1,36 @@
+<script>
+    n = '838102050' // Set 'n' to a string
+    document.write('n = ' + n + ', and is a ' + typeof n + '<br>')
+    n = 12345 * 67890; // Set 'n' to a number
+    document.write('n = ' + n + ', and is a ' + typeof n + '<br>')
+    n += ' plus some text' // Change 'n' from a number to a string
+    document.write('n = ' + n + ', and is a ' + typeof n + '<br>')
+    n = 200 / 5
+    document.write('n= ' + parseFloat(n) + ', and is a ' + typeof n + '<br>')
+    test()
+    
+    function test() {
+        a = 123 //global
+        var b = 456 //local
+        if (a == 123) var c = 789 //local
+
+        if (typeof b != 'undefined') document.write('b = "' + b + '"<br>')
+        if (typeof c != 'undefined') document.write('c = "' + c + '"<br>')
+    }
+
+    function sum(){
+        var a=50
+        a=a+50
+        document.write(a+"<br>")
+    }
+    sum()
+    if (typeof a != 'undefined') document.write('a = "' + a + '"<br>')
+
+
+    let hello = "Hello there"
+    var counter = 1
+    if (counter > 0) {
+        hello = "How are you?"
+    }
+    document.write(hello)
+</script>
