@@ -64,7 +64,7 @@ export default{
                     this.$swal({
                         title: "Maaf",
                         text: "Format email salah",
-                        icon: "error"
+                        icon: "warning"
                     });
                 }
                 else{
