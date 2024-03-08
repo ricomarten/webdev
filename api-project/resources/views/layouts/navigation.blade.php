@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/content">Content</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/penjualan">Penjualan</a>
+          </li>
          
         </ul>
         <form class="d-flex" role="search">

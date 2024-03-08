@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PenjualanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +16,16 @@ use App\Http\Controllers\AboutController;
 |
 */
 
-Route::get('/', function () {
+#Route::get('/', function () {
     #return view('welcome');
-    return view('hallo');
-});
+    #return view('hallo');
+    
+#});
+Route::get('/', [HomeController::class,'index']);
 Route::get('/home', function () {
     $name=["Andi","Budi","Caca"];
     $alamat=["Jakarta","Bogor","Tangerang"];
     return view('home',['data'=>$name, 'alamat'=>$alamat]);
 });
 Route::get('/about', [AboutController::class,'index']);
+Route::get('/penjualan', [PenjualanController::class,'index']);
